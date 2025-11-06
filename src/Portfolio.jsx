@@ -131,7 +131,7 @@ const Portfolio = () => {
 
   
   <a
-  href="https://www.linkedin.com/messaging/thread/new/?recipient=kritika-singh-73363b35b"
+  href="https://www.linkedin.com/in/kritika-singh-73363b35b/"
   target="_blank"
   rel="noopener noreferrer"
   className="fancy-btn"
@@ -388,8 +388,7 @@ const Portfolio = () => {
 
     </div>
 
-    <a href="https://www.linkedin.com/messaging/thread/new/?recipient=kritika-singh-73363b35b
-" className="contact-btn">
+    <a href="https://www.linkedin.com/in/kritika-singh-73363b35b/" className="contact-btn">
   Hire Me
 </a>
   </div>
