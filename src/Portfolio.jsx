@@ -276,7 +276,7 @@ const Portfolio = () => {
         A finance-focused web concept, for a trading company, offering a modern interface for trading with sleek UI and real-time insights..
       </p>
       <span>MERN Stack • API Integration</span>
-      <a href="#" className="view-link">View Project →</a>
+      <a href="https://github.com/Kritikas8349/CapexFrontend" className="view-link">View Project →</a>
     </div>
 
     <div className="project-card">
@@ -286,7 +286,7 @@ const Portfolio = () => {
         responsive layouts for every device.
       </p>
       <span>React • CSS </span>
-      <a href="#" className="view-link">View Project →</a>
+      <a href="https://github.com/Kritikas8349/Personal-Portfolio" className="view-link">View Project →</a>
     </div>
 
     <div className="project-card">
@@ -295,7 +295,7 @@ const Portfolio = () => {
       A high-conversion landing page for Forexpediaa, a trading company, designed to showcase their services, run ad campaigns, and capture leads effectively.
       </p>
       <span>HTML • CSS3 • JavaScript</span>
-      <a href="#" className="view-link">View Project →</a>
+      <a href="https://github.com/Kritikas8349/Landing-Page-Forexpediaa" className="view-link">View Project →</a>
     </div>
 
   </div>

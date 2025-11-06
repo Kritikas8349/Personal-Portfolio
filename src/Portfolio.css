@@ -70,6 +70,7 @@ html {
   position: absolute;
   right: 30px;
   top: 18px;
+  transition: all 0.4s ease;
 }
 
 .hamburger span {
@@ -80,9 +81,19 @@ html {
   transition: all 0.3s ease;
 }
 
+/* 🌫️ Glass effect when active */
+.hamburger.active {
+  /* background: rgba(255, 255, 255, 0.08); */
+  /* backdrop-filter: blur(12px) saturate(180%); */
+  /* -webkit-backdrop-filter: blur(12px) saturate(180%); */
+  /* border: 1px solid rgba(255, 255, 255, 0.25); */
+  border-radius: 14px;
+  padding: 8px;
+}
+
 /* Hamburger Active (X Animation) */
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(4px, 5px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -90,55 +101,114 @@ html {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -6px);
+  transform: rotate(-45deg) translate(6px, -7px);
 }
 
 
-/* ===== 📱 Responsive Styles ===== */
+/* 🧾 Tablet + Mobile (≤ 900px) */
 @media (max-width: 900px) {
-
-  .navbar{
+  .navbar {
     background-color: #b99384;
     margin-top: -1px;
   }
-  /* Show hamburger on mobile */
+
   .hamburger {
     display: flex;
   }
 
-  /* Hide nav links initially */
   .nav-links {
     position: fixed;
-    top: 0;
-    right: -70%; /* Hidden off-screen initially */
-    height: 50vh;
-    width: 60%; /* Sidebar width */
-    background-color: rgb(152, 107, 107);
+    top: 15px;
+    right: -70%;
+    height: 30vh;
+    width: 30%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
-    padding: 40px 0;
-    transition: right 0.4s ease;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px 0;
+    transition: right 0.4s ease, width 0.3s ease;
     z-index: 100;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
+    background: #b99384;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0 0 20px;
   }
 
-  /* When open → slide in from right */
   .nav-links.open {
     right: 0;
   }
 
-  /* Adjust link styles for mobile */
   .nav-links li {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .nav-links a {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 }
+
+/* 📱 Small Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 40%;
+    height: 32vh;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    right: 25px;
+  }
+}
+
+/* 📱 Mobile Devices (≤ 600px) */
+@media (max-width: 600px) {
+  .nav-links {
+    width: 45%;
+    height: 35vh;
+    border-radius: 15px 0 0 15px;
+    gap: 12px;
+    background: #b99384;
+    backdrop-filter: blur(18px) saturate(180%);
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📱 Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .nav-links {
+    width: 45%;
+    height: 35vh;
+    gap: 10px;
+    background: #b99384;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .hamburger {
+    right: 20px;
+    top: 16px;
+  }
+}
+
+/* 💻 Restore clean desktop look */
+@media (min-width: 901px) {
+  .nav-links {
+    background: none;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
 
 
 
@@ -494,13 +564,6 @@ html {
   width: 100%;
 }
 
-/* 🪶 On hover — slight scale + keep text bright */
-.fancy-btn:hover {
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(158, 119, 109, 0.5);
-}
-
 /* 🖥️ Responsiveness */
 @media (max-width: 768px) {
   .fancy-btn {
@@ -613,7 +676,7 @@ html {
   }
   .intro-text {
     font-size: 1.4rem;
-    /* text-align: center; */
+    text-align: start;
   }
   .hero-img-rect {
     width: 350px;
