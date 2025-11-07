@@ -903,6 +903,7 @@ html {
 .aboutme-desc {
   max-width: 800px;
   font-size: 1.1rem;
+  font-family: "Playfair Display", serif;
   line-height: 1.8;
   margin: 20px auto;
   color: #6a4c43;
