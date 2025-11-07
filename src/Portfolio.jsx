@@ -206,7 +206,7 @@ const Portfolio = () => {
 
 
 <section id="skills" className="skills-section fade-up">
-      <h2 className="skills-title">SKILLS & TOOLS</h2>
+      <h2 className="skills-title">Skills & Tools</h2>
       <p className="skills-subtext">My integrated toolkit for modern development.</p>
 
       <div className="skills-wrapper">

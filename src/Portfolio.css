@@ -851,7 +851,7 @@ html {
   justify-content: center;
   text-align: center;
   color: #6a4c43;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   animation: fadeInUp 1.2s ease forwards;
   box-sizing: border-box;
 }
@@ -878,8 +878,8 @@ html {
 
 /* ✨ TITLE */
 .aboutme-title {
-  font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-family: "Playfair Display";
+  font-size: 2.4rem;
   font-weight: 600;
   color: #5a3e36;
   margin-top: -40px;
@@ -944,7 +944,8 @@ html {
     padding: 80px 12%;
   }
   .aboutme-title {
-    font-size: 3.8rem;
+    font-size: 2.4rem;
+    font-family: "Playfair Display";
   }
   .aboutme-desc {
     font-size: 1.2rem;
@@ -963,6 +964,7 @@ html {
   }
   .aboutme-title {
     font-size: 3rem;
+    font-family: "Playfair Display";
   }
   .aboutme-desc {
     font-size: 1rem;
@@ -990,6 +992,7 @@ html {
   .aboutme-title {
     font-size: 2.4rem;
     margin-top: -10px;
+    font-family: "Playfair Display";
   }
   .aboutme-title::after {
     width: 60px;
@@ -1010,8 +1013,9 @@ html {
     font-size: 3.2rem;
   }
   .aboutme-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-top: -5px;
+    font-family: "Playfair Display";
   }
   .aboutme-title::after {
     width: 50px;
@@ -1291,7 +1295,7 @@ html {
 
 /* 🏷️ Title */
 .projects-title {
-  font-size: clamp(1.8rem, 2.2vw, 2.6rem);
+  font-size: 2.4rem;
   margin-bottom: 10px;
   letter-spacing: 1px;
   position: relative;
@@ -1418,6 +1422,10 @@ html {
   .project-card {
     max-width: 90%;
     padding: 25px 15px 70px;
+  }
+
+  .projects-title{
+    font-size: 1.4rem;
   }
 
   .view-link {
@@ -1613,7 +1621,7 @@ html {
   }
 
   .edu-exp-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .edu-exp-subtext {
