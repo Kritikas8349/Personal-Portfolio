@@ -964,7 +964,7 @@ html {
   }
   .aboutme-title {
     font-size: 3rem;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
   }
   .aboutme-desc {
     font-size: 1rem;
@@ -992,7 +992,7 @@ html {
   .aboutme-title {
     font-size: 2.4rem;
     margin-top: -10px;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
   }
   .aboutme-title::after {
     width: 60px;
@@ -1015,7 +1015,7 @@ html {
   .aboutme-title {
     font-size: 1.4rem;
     margin-top: -5px;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
   }
   .aboutme-title::after {
     width: 50px;
